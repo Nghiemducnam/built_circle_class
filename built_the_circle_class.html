@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let Circle= function(radius) {
+        this.radius = radius;
+
+        this.getRadius = function () {
+            return radius;
+        }
+        this.getArea = function () {
+            return Math.PI * radius * radius;
+        }
+    };
+    let a= parseInt(prompt("Nhập vào bán kính hình tròn:"));
+    let circle1= new Circle(a);
+    let radius= circle1.getRadius();
+    let area=  circle1.getArea();
+    alert("radius1: " + radius +" area1: "+ area);
+
+</script>
+
+</body>
+</html>
